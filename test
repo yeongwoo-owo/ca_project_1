@@ -1,0 +1,19 @@
+./mips-sim testfile/test1.bin >> testfile/result1
+./mips-sim testfile/test2.bin >> testfile/result2
+./mips-sim testfile/test3.bin >> testfile/result3
+./mips-sim testfile/test4.bin >> testfile/result4
+./mips-sim testfile/test5.bin >> testfile/result5
+./mips-sim testfile/test6.bin >> testfile/result6
+./mips-sim testfile/test7.bin >> testfile/result7
+./mips-sim testfile/test8.bin >> testfile/result8
+
+cd testfile
+
+diff -bsq result1 test1.txt
+diff -bsq result2 test2.txt
+diff -bsq result3 test3.txt
+diff -bsq result4 test4.txt
+diff -bsq result5 test5.txt
+diff -bsq result6 test6.txt
+diff -bsq result7 test7.txt
+diff -bsq result8 test8.txt
